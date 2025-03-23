@@ -146,7 +146,7 @@
       {
         name: "Italy",
         image: "Italy.jpg",
-        credit: "Sawyer Sutton/Pexels",
+        credit: "Maria Lucia P. Sampaio/Pexels",
         aiShare: "2.75%",
         genAIShare: "0.31%"
       }
@@ -159,27 +159,20 @@
       card.classList.add("photo-container");
 
       let title = document.createElement("h2");
-      title.textContent = country.name;
-      title.style.marginBottom = "0";
-      title.style.marginRight = "5px";
-      title.style.display = "inline";
+      title.innerText = country.name;
 
       let img = document.createElement("img");
       img.src = country.image;
       img.alt = `${country.name} flag`;
 
       let credit = document.createElement("p");
-      credit.textContent = `Photo Credit: ${country.credit}`;
-      credit.style.fontSize = "0.50em";
-      credit.style.padding = "0px 10px";
+      credit.innerText = `Photo Credit: ${country.credit}`;
 
       let aiShare = document.createElement("p");
-      aiShare.textContent = `% share of AI postings: ${country.aiShare}`;
-      aiShare.style.padding = "0px 10px";
+      aiShare.innerText = `% share of AI postings: ${country.aiShare}`;
 
       let genAIShare = document.createElement("p");
-      genAIShare.textContent = `% share of GenAI job postings: ${country.genAIShare}`;
-      genAIShare.style.padding = "0px 10px";
+      genAIShare.innerText = `% share of GenAI job postings: ${country.genAIShare}`;
 
       card.append(title);
       card.append(img);
