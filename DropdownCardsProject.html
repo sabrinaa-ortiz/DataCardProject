@@ -314,7 +314,7 @@
 
         function populateCountries() {
             countryDropdown.innerHTML = '<option value="all">All Countries</option>';
-            const selectedRegion = this.value; // Changed to this.value
+            const selectedRegion = this.value; 
             const filteredCountries = selectedRegion === 'all' ? countries : countries.filter(country => country.region === selectedRegion);
 
             filteredCountries.forEach(country => {
@@ -346,7 +346,7 @@
                 card.style.display = display;
             });
         }
-        regionDropdown.addEventListener('change', populateCountries); //added event listener to regionDropdown
+        regionDropdown.addEventListener('change', populateCountries); 
         populateCountries();
     </script>
 </body>
